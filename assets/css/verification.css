@@ -1,0 +1,189 @@
+@font-face {
+    font-family: "me-regular";
+    src: url("../fonts/MonumentExtended-Regular.otf");
+}
+
+@font-face {
+    font-family: "poppins-regular";
+    src: url("../fonts/Poppins-Medium.ttf");
+}
+
+body {
+    background-color: #0e0e13;
+    overflow: hidden;
+    caret-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.form-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#regForm {
+    background-color: #1d1c24;
+    padding: 40px 60px;
+    width: 450px;
+    overflow: hidden;
+    border-radius: 16px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    color: #ececec;
+    font-family: "poppins-regular";
+    font-weight: 100;
+    font-size: 26px;
+    display: block;
+    line-height: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.subtitle {
+    text-align: center;
+    color: #65626c;
+    font-family: "poppins-regular";
+    font-weight: 100;
+    font-size: 14px;
+    display: block;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+p {
+    color: #65626c;
+    font-family: "poppins-regular";
+}
+
+.subtitle a {
+    background: linear-gradient(90deg, rgb(76, 0, 255), rgb(78, 38, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.8;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.subtitle a:hover {
+    background: linear-gradient(90deg, rgb(76, 0, 255), rgb(78, 38, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 65px;
+}
+
+.top-bar img {
+    height: 40px;
+    width: auto;
+    margin: 10px 5px 10px 10px;
+}
+
+.top-bar h1 {
+    color: #fff;
+    font-size: 20px;
+
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    line-height: 65px;
+    font-family: "me-regular", sans-serif;
+}
+
+
+#tab1 {
+    height: 110px;
+}
+
+@media screen and (max-width: 610px) {
+
+    #regForm {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+
+    #regForm {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+
+    #regForm {
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+
+    #regForm {
+        width: 250px;
+    }
+
+    #tab1 {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 410px) {
+
+    #regForm {
+        width: 200px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+
+    }
+}
+
+#serverVerifyBtn {
+    background: linear-gradient(90deg, rgb(55, 0, 255), rgb(85, 38, 255));
+    opacity: 0.8;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "poppins-regular";
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+#serverVerifyBtn:hover {
+    opacity: 1;
+}
